@@ -7,13 +7,13 @@ body {
 }
 
 h1, h2 {
-  color: #3B3F41;
   font-family: 'Roboto', sans-serif;
   line-height: 20px;
 }
 
 h1 {
   font-size: 25px;
+  color: #3B3F41;
 }
 
 h2 {
@@ -35,9 +35,18 @@ a:hover {
   color: #59929E;
 }
 
+ul {
+  padding: 0;
+}
+
+table {
+  padding-bottom: 15px;
+  text-align: left;
+}
+
 .table-image {
-  width: 200px;
-  height: 200px;
+  width: 140px;
+  height: 140px;
   border-radius: 20px;
   border: 3px solid;
   border-color: #59929E;
@@ -89,9 +98,6 @@ a:hover {
   padding: 0 35px;
 }
 
-ul {
-  padding: 0;
-}
 
 .fab {
   padding: 5px;
@@ -102,8 +108,9 @@ ul {
 }
 
 .language-name {
+  margin-top: 10px;
 }
 
-table {
-  padding-bottom: 15px
+.table-body {
+  padding-left: 10px;
 }
