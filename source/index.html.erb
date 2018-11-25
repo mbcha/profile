@@ -1,15 +1,66 @@
----
-title: Le Wagon - Middleman
----
+<div class="wrapper">
+  <div class="card-grid">
+    <div class="main-card main-card-left">
+      <div class="card card-info">
+        <h3 style="background-image: url('../images/yo.jpg');" class="avatar"/></h3>
+        <h1>BELLA CHA</h1>
+        <h3>Junior Web Developer</h3>
+        <p><%= link_to "Le Wagon","https://www.lewagon.com/", class: "lewagon-link", target: :blank %> Graduate</p>
 
-<div id="home">
-  <div class="home-content">
-    <%= image_tag "logo.png", width: "200" %>
-    <p>
-      Middleman is now running!
-    </p>
-    <p class="about">
-      <%= link_to "More about this template", "about.html" %>
-    </p>
+      </div>
+    </div>
+
+    <div class="main-card main-card-right">
+      <div class="card card-projects">
+        <h3>Projects</h3>
+        <div class="projects">
+          <% link_to "https://tool-bnb.herokuapp.com/", class: "project", target: :blank do %>
+          <i class="fas fa-wrench project-background"></i>
+          <div class="project-hover"></div>
+          <div class="project-info">
+            <h2>ToolBox</h2>
+            <div class="project-description">
+              <ul>
+                <li><p>Website to rent a tool.</p></li>
+                <li><p>One week project during Le Wagon Bootcamp.</p></li>
+                <li><p>Collaborated with three other developers on Github.</p></li>
+              </ul>
+            </div>
+          </div>
+          <% end %>
+          <!-- <a href="https://misses-cocktail.herokuapp.com/" class="project">CocktailBook</a> -->
+          <% link_to "https://shelfup.club/", class: "project", target: :blank do %>
+          <i class="fas fa-arrow-up project-icon project-background"></i>
+          <div class="project-hover"></div>
+          <div class="project-info">
+            <h2>ShelfUp</h2>
+            <div class="project-description">
+              <ul>
+                <li><p>Website to find a shelf in a store or find new products to display in your store.</p></li>
+                <li><p>Two weeks project during Le Wagon Bootcamp.</p></li>
+                <li><p>Collaborated with three other developers on Github.</p></li>
+              </ul>
+            </div>
+          </div>
+          <% end %>
+        </div>
+      </div>
+
+      <div class="card card-contact">
+        <!-- <h3>Contact Me</h3> -->
+        <% link_to("https://github.com/mbcha", class: "link", target: :blank) do %>
+        <i class="fab fa-github card-icon"></i>
+        <% end %>
+        <% link_to("https://www.linkedin.com/in/bella-cha-097385a0/", class: "link", target: :blank) do %>
+        <i class="fab fa-linkedin-in card-icon"></i>
+        <% end %>
+        <% link_to("mailto:EMAIL", class: "link", target: :blank) do %>
+        <i class="far fa-envelope card-icon email-link"></i>
+        <% end %>
+        <% link_to("https://www.linkedin.com/in/bella-cha-097385a0/", class: "link", target: :blank, title: "Download CV") do %>
+        <i class="far fa-file-pdf card-icon"></i>
+        <% end %>
+      </div>
+    </div>
   </div>
 </div>

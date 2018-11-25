@@ -1,33 +1,60 @@
-#about {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  text-align: center;
-  background-image: linear-gradient(0deg, white 50%, #F4F4F4 50%);
-  img {
-    width: 150px;
-    box-shadow: 1px 1px 5px rgba(0,0,0,0.2);
+body {
+  background-color: $background-gray;
+  color: $gray;
+  line-height: 15px;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1, h2 {
+  font-family: 'Nanum Gothic', sans-serif;
+  line-height: 20px;
+}
+
+h1 {
+  font-size: 25px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+h3 {
+  letter-spacing: 1px;
+  font-size: 25px;
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
+p {
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  color: $link-green;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+
+.text-inline {
+  display: inline-block;
+  padding: 0 35px;
+}
+.wrapper {
+  background-color: $background-gray;
+}
+.container {
+  display: flex !important;
+}
+.lewagon-link {
+  &:hover {
+    text-decoration: none;
+    color: $link-green;
+    border-bottom: 2px solid $link-green;
   }
-  h1 {
-    font-size: 30px;
-    font-weight: bolder;
-    margin-bottom: 30px;
-    margin-top: 0px;
-    color: rgba(0,0,0,0.7);
-  }
-  h2 {
-    font-size: 17px;
-    font-weight: bold;
-    color: rgba(0,0,0,0.6);
-  }
-  a {
-    color: rgba(0,0,0,0.25);
-    font-weight: bold;
-    letter-spacing: -0.5px;
-    font-size: 15px;
-  }
-  .fa-heart {
-    color: #D23333;
+  &:focus {
+    text-decoration: none;
   }
 }
