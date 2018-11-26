@@ -13,6 +13,7 @@
   width: auto;
   height: 20%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
   flex-direction: row;
@@ -41,12 +42,13 @@
   }
 }
 .card-projects {
+  text-align: center;
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-
-  height: 70%;
+  justify-content: center;
+  align-items: center;
+  height: auto;
   h3 {
+    min-width: 400px;
   }
 }
 // .sub-card {
@@ -62,6 +64,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  // align-items: center;
   height: 600px;
   width: 600px;
 }
@@ -80,8 +83,20 @@
   }
 }
 .main-card-right {
-  width: 750px;
+  min-height: 100%;
+  min-width: 500px;
+  width: 50%;
 }
 .main-card-left {
-  width: 450px;
+  min-width: 500px;
+  width: 30%;
+}
+@media screen and (max-width: 800px) {
+  .main-card {
+    width: 60%;
+    height: 60%;
+  }
+  .card-contact {
+    height: 100px;
+  }
 }
