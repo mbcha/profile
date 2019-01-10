@@ -11,3 +11,4 @@ gem 'font-awesome-sass'
 gem 'bootstrap-sass'
 gem 'jquery-middleman'
 
+gem "rack", ">= 2.0.6"
