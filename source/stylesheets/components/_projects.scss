@@ -4,7 +4,8 @@
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
-  min-width: 400px;
+  // width: 400px;
+  // width: 90%;
   height: 100%;
   width: 95%;
   border-top: 1px solid rgba(70,221,212,0.6);
@@ -12,7 +13,7 @@
   margin-bottom: 40px;
 }
 .project {
-  width: 300px;
+  width: 40%;
   height: 250px;
   margin-top: 20px;
   background-position: center;
@@ -69,7 +70,7 @@
   color: $gray;
   opacity: 0;
   background: white;
-  text-align: justify;
+  // text-align: justify;
   margin: 10px;
   position: absolute;
   left: 0;
@@ -83,7 +84,7 @@
   padding-top: 20px;
 }
 .project-info {
-  width: 300px;
+  width: 40%;
   height: 230px;
   display: flex;
   flex-direction: column;
@@ -109,4 +110,10 @@
 .fa-wrench {
   padding-top: 10px;
   font-size: 230px;
+}
+
+@media screen and (max-width: 800px) {
+  .project {
+    width: 90%;
+  }
 }

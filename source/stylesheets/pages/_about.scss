@@ -31,6 +31,9 @@ p {
 
 a {
   color: $link-green;
+  &:focus {
+    text-decoration: none;
+  }
 }
 
 a:hover {
